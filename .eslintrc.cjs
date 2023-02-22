@@ -35,5 +35,6 @@ module.exports = {
     ],
     "no-case-declarations": "off",
     "no-debugger": "warn",
+    "react/prop-types": "off",
   },
 };
