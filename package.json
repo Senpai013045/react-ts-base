@@ -10,7 +10,8 @@
     "lint:fix": "eslint --ext .js,.jsx,.ts,.tsx --fix src",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx src",
     "format:fix": "prettier --check --write --config .prettierrc src",
-    "format": "prettier --check --config .prettierrc src"
+    "format": "prettier --check --config .prettierrc src",
+    "test": "vitest"
   },
   "dependencies": {
     "firebase": "^9.17.1",
@@ -18,14 +19,20 @@
     "react-dom": "^18.2.0",
     "react-firebase-hooks": "^5.1.1",
     "react-router-dom": "^6.8.1",
-    "react-toastify": "^9.1.1"
+    "react-toastify": "^9.1.1",
+    "tailwind-merge": "^1.10.0",
+    "vitest": "^0.28.5"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/user-event": "^14.4.3",
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
     "@typescript-eslint/eslint-plugin": "^5.53.0",
     "@typescript-eslint/parser": "^5.53.0",
     "@vitejs/plugin-react": "^3.1.0",
+    "@vitest/coverage-c8": "^0.28.5",
     "autoprefixer": "^10.4.13",
     "eslint": "8.2.0",
     "eslint-config-airbnb": "19.0.4",
@@ -33,6 +40,7 @@
     "eslint-plugin-jsx-a11y": "6.5.1",
     "eslint-plugin-react": "7.28.0",
     "eslint-plugin-react-hooks": "4.3.0",
+    "jsdom": "^21.1.0",
     "postcss": "^8.4.21",
     "prettier": "^2.8.4",
     "tailwindcss": "^3.2.7",
