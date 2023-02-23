@@ -1,4 +1,4 @@
-import { toast } from "react-toastify";
+import {toast} from "react-toastify";
 
 export const extractErrorMessage = (err: unknown) => {
   let message = "Something went wrong";
@@ -13,7 +13,7 @@ export const extractErrorMessage = (err: unknown) => {
 
 const defaultNotifier = (message: string) => {
   toast.error(message);
-}
+};
 
 export const notifyError = (err: unknown, notifier = defaultNotifier) => {
   const message = extractErrorMessage(err);
