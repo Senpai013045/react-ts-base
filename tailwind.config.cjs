@@ -5,9 +5,9 @@ module.exports = {
     extend: {
       colors: {
         //gray
-        "ui-darkest": "#1f2d3d",
-        "ui-darker": "#3c4858",
-        "ui-dark": "#2c3e50",
+        "ui-darkest": "#141B3D",
+        "ui-darker": "#1D253F",
+        "ui-dark": "#2E3A59",
         "ui-medium": "#c0ccda",
         "ui-light": "#e0e6ed",
         "ui-lighter": "#f9fafc",

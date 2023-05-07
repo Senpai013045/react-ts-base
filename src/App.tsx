@@ -1,22 +1,20 @@
 import {Route, Routes} from "react-router-dom";
-import {ProtectedRoute} from "./components/ProtectedRoute";
 import {Home} from "./pages/Home";
-import {Login} from "./pages/Login";
 import {ToastContainer} from "react-toastify";
-import {WithNav} from "./components/Layout/WithNav";
 import "react-toastify/dist/ReactToastify.css";
+import {Shop} from "./pages/Shop";
+import {Verification} from "./pages/Verification";
+import {Success} from "./pages/Success";
 
 function App() {
   return (
-    <div className="min-w-[100vw] min-h-[100vh] bg-ui-lightest text-ui-darkest">
+    <div className="bg-ui-darkest text-ui-lightest min-h-screen">
       <ToastContainer />
       <Routes>
-        <Route path="/login" element={<Login />} />
-        <Route path="/" element={<ProtectedRoute />}>
-          <Route path="/" element={<WithNav />}>
-            <Route path="/" element={<Home />} />
-          </Route>
-        </Route>
+        <Route path="/" element={<Home />} />
+        <Route path="/shop/:slug" element={<Shop />} />
+        <Route path="/verification/:index" element={<Verification />} />
+        <Route path="/success" element={<Success />} />
       </Routes>
     </div>
   );
